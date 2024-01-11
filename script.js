@@ -40,7 +40,7 @@ form.addEventListener("submit", function (event) {
     ul.appendChild(li);
  
     // Sätt innehållet i li-elementet med en länk, en hjärt-knapp och en delete-knapp
-    li.innerHTML = `<button class="delete">&#10005;</button><button class="save">&hearts;</button><a href="${inputValue}" target="_blank">${inputValueName}</a></li>`;
+    li.innerHTML = `<button class="delete">&#10005;</button><button class="save">&hearts;</button><a class="link" href="${inputValue}" target="_blank">${inputValueName}</a></li>`;
  
     // Återställ värdena i inputfälten
     textInput.value = "";
@@ -58,11 +58,17 @@ ul.addEventListener("click", function (event) {
         console.log(event.target.className);
  
         if (event.target.className === "save") {
-            event.target.classList.toggle("heart");
- 
+            event.target.classList.remove(event.target.className);
+            event.target.classList.add("heart");
         }
+
+        else if (event.target.className === "heart") {
+            event.target.classList.remove(event.target.className);
+            event.target.classList.add("save");
+        }
+
  
-        if (event.target.className === "delete") {
+        else if (event.target.className === "delete") {
             event.target.parentElement.remove();
         }
     }
