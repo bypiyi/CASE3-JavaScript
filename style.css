@@ -9,8 +9,8 @@
 
 body {
     background: #E9D5F0;
-    height: 100vh; /* Sätt höjden till 100% av fönsterhöjden */
-    margin: 0; /* Ta bort standardmarginalen för body */
+    height: 100vh;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,20 +21,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 15px;
     width: 580px;
     height: 580px;
     border-radius: 20px;
     background: #E9D5F0;
     box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.25), -6px -6px 4px 0px rgba(255, 255, 255, 0.20);
-
 }
 
 
-.form, .list {
+.form,
+.list {
     align-items: center;
     width: 80%;
-    display: block; 
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -51,82 +51,82 @@ p {
     margin-bottom: 20px;
 }
 
-    /* div.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    padding-bottom: 3rem;
+
+
+.type_box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 3.5rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1), -3px -3px 4px 0px rgba(255, 255, 255, 0.3);
 }
-  */
-
-    .type_box {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        height: 3rem;
-        border: 1px solid white;
-        border-radius: 1rem;
-    }
 
 
-    .button {
-        background-color: #3604ff81;
-        width: 100%;
-        border-radius: 1rem;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 20px;
-    }
+.button {
+    background-color: #3604ff81;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1), -3px -3px 4px 0px rgba(255, 255, 255, 0.3);
+}
 
-    .button:hover {
-        background-color: #b2a2f581;
-        color: black;
-    }
+.button-text {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0rem;
-        padding-top: 54px;
-    }
+.button:hover {
+    background-color: #b2a2f581;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0rem;
+    padding-top: 0px;
+}
 
 
-    .link {
-        font-size: 1rem;
-        color: black;
-        text-decoration: none;
-        padding-left: 20px;
-    }
+.link {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
 
 
 
-    .heart {
-        color: #fb0501;
-        background-color: #E9D5F0;
-        border: none;
-        padding: 10px;
-        font-size: 1.5rem;
-    }
+.heart {
+    color: #fb0501;
+    background-color: #E9D5F0;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+}
 
-    .save {
-        color: #000000;
-        background-color: #E9D5F0;
-        border: none;
-        padding: 10px;
-        font-size: 1.5rem;
-    }
+.save {
+    color: #000000;
+    background-color: #E9D5F0;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+}
 
 
-    .delete {
-        background-color: #E9D5F0;
-        color: black;
-        padding: 5px;
-        border: none;
-        font-size: 1rem;
-    }
+.delete {
+    background-color: #E9D5F0;
+    color: black;
+    padding: 5px;
+    border: none;
+    font-size: 1rem;
+}
